@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   /* border: 3px solid red;     */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  html{
+    max-width: 100%;
+   }
+    
+    
+    nav{
+     
+      background-color: rgb(22, 21, 25);
+      max-width: 100%; 
+      min-height: 7em;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #logo{
+      max-width: 7%;
+      min-height: 100%;
+      position: relative;
+      left: 45%;
+      background-image: cover;
+  
+    }
+    
+    nav ul{
+      float: right;
+      margin-right: 3%;
+      margin-top: 1%;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 3em;
+      margin: 0 5px;
+  
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      text-transform: uppercase;
+      border-radius: 10%;
+      
+    }
+    nav ul li:hover{
+      background-color: #1E90FF;
+      transition: 0.5s;
+    }
+   /* header1 */
+   .header1{
+    background: black;
+  
+    min-height: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+     padding: 5%;
+    align-items: center;
+    color: white;
+    gap: 40px;
+  }
+
+  
+  .header1 h1{
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .container1{
+    max-width: 60%;
+  }
+  
+
+.container1 p{
+    font-size: 21px;
+    margin-bottom: 12px;
+   
+  }
+ 
+  .header1 img{
+   
+   opacity: 0.5s;
+   margin-left: 10%;
+   max-width: 40%;
+   min-height: 60%;
+  
+  
+
+  }
+ 
+  .container1 button{
+    max-width: 50%;
+    min-height: 2.5em;
+    background-color: #1E90FF;
+    border: 2px solid #0c2035;
+    margin-top: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0 2%;
+  }
+  button:hover{
+    opacity: 1s;
+    background-color: #051094;
+    
+  }
+
+
+  /* section2 */
+  .section2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* min-width: 100vh;  */
+    background-color: black;
+    justify-content: space-evenly; 
+    padding-bottom: 2%;
+    
+
+  }
+  .container2 .img-list{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+   
+  
+  }
+  .container2 .img-block .img-item{
+    
+    max-width: 20em;
+    max-height: 25em;
+    object-fit: cover;
+
+  }
+  /* section3 */
+  .section3{
+    background-color: rgb(233, 233, 233);
+    margin-left: 40%;
+   
+  }
+  .container3{
+    display: flex;
+   align-content: center;
+   border-color: aqua;
+   max-width: 60%;
+   margin-left: 20%;
+   justify-content: space-evenly;
+   padding: 2%;
+   
+  
+
+  }
+  .container3 h3{
+    font-size: 24px;
+  }
+  .container3 p{
+    font-size: 18px;
+  }
+  #header2{
+    max-width: 30%;
+    background-color: #1E90FF;
+    height: 4%;
+    transform: rotate(45deg);
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    -webkit-animation: spin 4s infinite linear;
+    
+  }
+  @-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+ 
+  #header2 h2{
+    position: relative;
+    top: 20%;
+    margin-top: 0%;
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+  }
+  .container3 h2{
+    font-size: 32px;
+    margin-top: 50%;
+    box-shadow: 20px 20px 20px rgba(12,45,80,1)
+  }
+  .info1{
+    max-width: 60%;
+    
+  }
+  .info1 ol li{
+    padding-top: 2%;
+  }
+
+  /* Section4 */
+
+  .section4{
+    background-color: rgb(102, 109, 154);
+    color: white;
+    padding: 2%;
+    
+  }
+  .section4 h2{
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding: 4% 0;
+    color: #1E90FF;
+    text-shadow: 0 5px 10px rgba(12,45,80,1)
+  }
+  .row1{
+    max-width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16em,1fr));
+    grid-gap: 2%;
+  
+  }
+  .col1{
+    padding: 10% 15%;
+    background-color: rgb(24, 53, 81);
+    border-radius: 2%;
+    text-align: center;
+    margin-top: 2%;
+    /* box-shadow:  0 5px 10px rgba(12,45,80,1); */
+    box-shadow: 20px 20px 20px rgba(12,45,80,1), 20px 20px 20px #000000
+   
+     
+  }
+  .col1 ul{
+    list-style-position: inside;
+    text-align: left;
+    margin-top: 2%;
+    color: grey;
+    list-style: none;
+  }
+  .col1 ul li{
+     margin: 4% 0;
+  }
+  .col1 ul li:before {
+    content: '\2024'; 
+    color: #1E90FF;
+    font-weight: bold;
+    
+
+  }
+  .col1 p{
+    font-size: 21px;
+  }
+  .col1 h3{
+    font-size: 44px;
+    margin-top: 10%;
+    font-weight: 500;
+  }
+  .col1 h3 span{
+    font-size: 16px;
+  }
+  .col1 button{
+    width: 100%;
+    padding: 2% 0;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #123251;
+    border-radius: 5%;
+    margin-top: 2%;
+    cursor: pointer;
+
+  }
+
+  .col1 a{
+    color: white;
+  }
+  .col1  button:hover{
+    background-color: #1E90FF;
+
+  }
+  footer{
+    color: white;
+    bottom: 0;
+    background-color: #161519;
+    line-height:150%;
+   
+  }
+  #img4{
+    max-width: 30%;
+    min-height: 20%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    background-size: contain;
+  
+  
+  }
+  .row{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+   
+    
+  
+  }
+  .none{
+    list-style-type: none;
+  }
+  .col{
+    flex-basis: 20%;
+    padding: 2%;
+    
+  }
+  .col h3{
+    max-width: 34%;
+    position: relative;
+    /* padding-bottom: 10%; */
+  }
+  .col ul li {
+    list-style-type: none;
+    margin-top: 3%;
+   
+    
+  
+  }
+  .col ul li a {
+    color: white;
+    margin-top: 2%;
+  
+  }
+  
+   .fa-brands{
+    margin-top: 12%;
+    color: #1E90FF;
+    max-width: 10%;
+    min-height: 10%;
+    text-shadow: black;
+    line-height: 10%;
+    font-size: 230%;
+    border-color: black;
+    margin-right: 5%;
+    cursor: pointer;
+  }
