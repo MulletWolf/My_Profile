@@ -6,25 +6,58 @@
         <Meta name="author" content ="Diana Ogualiri">
         <script src="https://kit.fontawesome.com/bee31374a2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type ="text/css" href="style/Muscle.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
         
     </head>
     <body>
-        <nav>
+        <nav >
             <img id="logo"src="images/logo.png">
-            <ul>
+            
+            <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Muscle.html">Muscle Guide</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Servises.html">Servises</a></li>
                 <li><a href="Contact.html">Contact Us</a></li>
             </ul>
+            <a href="javascript:void(0);" id="click" onclick="myFunction()">
+                <div id ="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+              </a>
            
         </nav>
+        <script>
+            function myFunction() {
 
+                var menutoggle = document.getElementById("navbar");
+                 if (menutoggle.style.display === "block") {
+                     menutoggle.style.display = "none";
+                 } else {
+                            menutoggle.style.display = "block";
+                            }
+}
+
+
+            // const menutoggle=document.querySelector("#menu");
+            // const navbar=document.querySelector("#navbar")
+            // menutoggle.addEventListener("click", menuClick)
+
+            //  function menuClick(){
+            //     if(navbar.classList.contains("open")){
+            //         navbar.classList.add("open")
+            //     }
+            //     else{
+            //         navbar.classList.remove("open")
+            //     }
+                
+            //  }
+      
+
+            </script>
         <header class="header1">
            
                 <img src="images/2gym1png.png">
@@ -44,82 +77,92 @@
 
         <main>
             <section class="section1">
-                <img src="images/2gym2.png">
-                <div class="muscle-txt">
-                    <h2>Reasons why you aren't building muscle correctly</h2>
-                    <p>It's normal to struggle with muscle building especially when you are unsure of the information around you,
+                <div class="left1"><img src="images/2gym2.png"></div>
+                <div class="right1">
+                    <div class="muscle-txt">
+                        <h2>Reasons why you aren't building muscle correctly</h2>
+                        <p>It's normal to struggle with muscle building especially when you are unsure of the information around you,
                         wheather or not they are true or false. Here's how to build them the right way.
-                    </p>
+                        </p>
 
-                    <ul>
-                        <li>
-                            <h3>You are not eating enough</h3>
-                            <p>If you are not a beginner and you are not eating in a calorie surplus, you won't gain any appreciable amount of muscle.
+                        <ul>
+                            <li>
+                                <h3>You are not eating enough</h3>
+                                <p>If you are not a beginner and you are not eating in a calorie surplus, you won't gain any appreciable amount of muscle.
                                 Protein is the bulding block for muscle.If your protein is inadequete, your muscle building will be limited.You need 0.8-2 grams of protein per body mass.</p>
-                        </li>
+                            </li>
                        
 
-                        <li>
-                            <h3>You are not following a routine</h3>
-                            <p>Make sure that you are following a routine that is geared to your experience level and goals that consist of progressive overload.
+                            <li>
+                                <h3>You are not following a routine</h3>
+                                p>Make sure that you are following a routine that is geared to your experience level and goals that consist of progressive overload.
                                 You should be doing research so you will know what workouts you should be doing,instead of walking around aimlessly. You need to be consistant to see results.</p>
 
-                        </li>
-                        <li><h3>You are not training hard enough</h3>
-                            <p>You need to train to failure not being 1-2 or more reps close to failure. Muscle grows from the stress you place on them. You should be training for hypertrophy while doing 6-12 reps.</p>
+                            </li>
+                            <li><h3>You are not training hard enough</h3>
+                                <p>You need to train to failure not being 1-2 or more reps close to failure. Muscle grows from the stress you place on them. You should be training for hypertrophy while doing 6-12 reps.</p>
 
-                        </li>
+                            </li>
                        
                         
                     </ul>
 
-
-
-                </div>
-
-            </section>
-
-            <section class="section2">
-                <div class="row2">
-                    <img src="images/2gym3.png">
-                    <div class="container3">
-                     <h2>Common muscle gain questions</h2>
-                        <p id="p1">There are many misconceptions about what it takes to build muscle, 
-                             and experts say that believing them could be decreasing your gains.
-                        </p>
-
-                      <ul>
-                         <li>
-                            <h3>Do you need to be in a surplus to gain muscle?</h3>
-                            <p>No but it does help.</p>
-                            
-                         </li>
-                            <li>
-                                <h3>How often should you change your program?</h3>
-                             <p>Not often.</p>
-
-                             </li>
-                        <li>
-                            <h3>Do you need to train 6 and more days a week to gain muscle?</h3>
-                            <p>No, rest days are important. You can even gain muscle by training 3 or less days a week.</p>
-                        </li>
-                        <li>
-                            <h3>Do you need to drink protein shakes?</h3>
-                            <p>No but they do help especially when you know that you are not eating enough protein every day.</p>
-                        </li>
-                        <li>
-                            <h3>Do you need too take creatine/ oxyshred etc to build muscle?</h3>
-                            <p>No. They do help with building muscle if you are drinking 3-4 litres of water a day.</p>
-                        </li>   
-                    </ul>
-                    <p>Through are expert science driven programs, 
-                        we will prove to you that what we say are true. We will guide you to make good decisions throughout your fitness journey.</p>
                 </div>
 
                 </div>
                 
 
             </section>
+
+            <!-- <section class="section2">
+                <div class="row2">
+                    <div class="left2"><img id="img2"src="images/2gym3.png"></div>
+
+                    <div class="right2">
+
+                        <div class="container3">
+
+                            <h2>Common muscle gain questions</h2>
+                            <p id="p1">There are many misconceptions about what it takes to build muscle, 
+                             and experts say that believing them could be decreasing your gains.
+                            </p>
+
+                            <ul>
+                            <li>
+                                <h3>Do you need to be in a surplus to gain muscle?</h3>
+                                <p>No but it does help.</p>
+                            
+                            </li>
+                            <li>
+                                    <h3>How often should you change your program?</h3>
+                                    <p>Not often.</p>
+
+                                </li>
+                            
+                            <li>
+                                <h3>Do you need to train 6 and more days a week to gain muscle?</h3>
+                                <p>No, rest days are important. You can even gain muscle by training 3 or less days a week.</p>
+                            </li>
+                            <li>
+                                <h3>Do you need to drink protein shakes?</h3>
+                                <p>No but they do help especially when you know that you are not eating enough protein every day.</p>
+                            </li>
+                            <li>
+                                <h3>Do you need too take creatine/ oxyshred etc to build muscle?</h3>
+                                <p>No. They do help with building muscle if you are drinking 3-4 litres of water a day.</p>
+                            </li>   
+                            </ul>
+                            <p>Through are expert science driven programs, 
+                            we will prove to you that what we say are true. We will guide you to make good decisions throughout your fitness journey.</p>
+                        
+                        </div>
+                    </div>
+                   
+
+                </div>
+                
+
+            </section> -->
 
         </main>
 

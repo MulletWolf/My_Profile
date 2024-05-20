@@ -15,17 +15,51 @@
         
     </head>
     <body>
-        <nav>
+        <nav >
             <img id="logo"src="images/logo.png">
-           
-            <ul>
+            
+            <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Muscle.html">Muscle Guide</a></li>
                 <li><a href="About.html">About Us</a></li>
                 <li><a href="Servises.html">Servises</a></li>
                 <li><a href="Contact.html">Contact Us</a></li>
             </ul>
+            <a href="javascript:void(0);" id="click" onclick="myFunction()">
+                <div id ="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+              </a>
+           
         </nav>
+        <script>
+            function myFunction() {
+
+                var menutoggle = document.getElementById("navbar");
+                 if (menutoggle.style.display === "block") {
+                     menutoggle.style.display = "none";
+                 } else {
+                            menutoggle.style.display = "block";
+                            }
+}
+
+
+            // const menutoggle=document.querySelector("#menu");
+            // const navbar=document.querySelector("#navbar")
+            // menutoggle.addEventListener("click", menuClick)
+
+            //  function menuClick(){
+            //     if(navbar.classList.contains("open")){
+            //         navbar.classList.add("open")
+            //     }
+            //     else{
+            //         navbar.classList.remove("open")
+            //     }
+                
+            //  }
+      
+
+            </script>
         <header class="section1">
             <img id="hero-img"src="images/hero.png" width="500" height="500">
                 <article class="container1">
@@ -35,7 +69,7 @@
                         Be prepared to transform into your desired physique. Put yourself first.
                     </p>
                     <button><a href="Contact.html">Join Us</a></button>
-
+ 			
                 </article>
 
 
@@ -52,9 +86,9 @@
 
                 <div class="row1">
                     <div class="col1">
-                        <div class="icons">
+                        <!-- <div class="icons">
                             <i class="fa-solid fa-book-open-cover"></i>
-                        </div>
+                        </div> -->
                         <img src="images/Knowledge.png">
                         <h3>Knowledge is Power</h3>
                         <p>Learn the latest easy-to-understand muscle building advice.You will have a better understanding 
@@ -204,7 +238,7 @@
 
         <footer>
             <div class="row">
-                 <div class="col">
+                <div class="col">
                     <img id="img4"src="images/logo.png">
                      <p>Finding the right plan and tips is time-consuming.
                         Mysterra helps reduce the time and stress
@@ -212,10 +246,19 @@
                          We provide consultation services for any concerns you may have 
                          with your health through our membership plans.
                         
-                    </p>
+                         </p>
+                     <div class="co">
+                        <h3>Follow Us</h3>
+                         <div class="social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
 
-                
-                 </div>
+                    </div>
+    
+                </div>
                 <div class="col">
                     <h3>Contact us</h3>
                     <ul class="none">
@@ -247,15 +290,7 @@
                         
                     </ul>
                 </div>
-                <div class="col">
-                    <h3>Follow Us</h3>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-
-
-                </div>
+               
 
                
 
